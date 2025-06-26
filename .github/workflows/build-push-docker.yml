@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t aditinadiger/textsumm:latest .
+          docker build -t aditinadiger/text_summarisation:latest .
 
       - name: Push Docker Image
         run: |
-          docker push aditinadiger/textsumm:latest
+          docker push aditinadiger/text_summarisation:latest
