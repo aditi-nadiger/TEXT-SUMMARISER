@@ -145,7 +145,7 @@ def average_score(score_dict):
 def create_summary(sentences, sentence_score, threshold):
     summary = ''
     for sentence in sentences:
-        if sentence[:15] in sentence_score and sentence_score[sentence[:15]] >= threshold:
+        if sentence[:25] in sentence_score and sentence_score[sentence[:25]] >= threshold:
             summary += " " + sentence.text
     return summary
 
